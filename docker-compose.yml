@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: react-app
+    container_name: react-app
+    volumes:
+      - .:/app
+      - /app/node_modules

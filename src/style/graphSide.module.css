@@ -1,0 +1,35 @@
+.bottomTextDivWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottomTextDivSign {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px;
+  margin-left: 40px
+}
+
+.bottomTextDivText {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.basicStyles {
+  height: 100%;
+  width: 100%;
+  border: 2px solid lightgray;
+}
+
+@media (max-width: 443px) {
+  .bottomTextDivText {
+    margin: 0px;
+    margin-left: 5px;
+  }
+}

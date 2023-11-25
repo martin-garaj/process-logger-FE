@@ -1,0 +1,14 @@
+.react-flow__node:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: black!important;
+}
+
+.react-flow__handle {
+  opacity: 0!important;
+}
+.react-flow__zoompane {
+  max-height: 100%;
+  max-width: 100%;
+  overflow-y: scroll;
+}

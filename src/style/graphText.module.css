@@ -1,0 +1,109 @@
+.wrapperGraphText {
+  display: flex;
+  height: 100vh;
+}
+
+.half {
+  flex: 1; /* This makes both divs take equal width */
+  padding: 10px; /* Optional: Add padding for spacing */
+}
+
+.graph, .text, .phaseShortcut {
+  border: 2px solid lightgrey;
+}
+
+.phaseShortcut{
+  width: 30px;
+  cursor: pointer;
+}
+
+.graph, .text {
+  height: 80vh!important;
+}
+
+.graph {
+  width: 100%!important;
+}
+
+.button {
+  margin-bottom: 5px!important;
+}
+
+.tooltipTextLink {
+  position: absolute;
+  font-size: 20px!important;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.nodeHover {
+  width: 250px;
+  font-size: 15px!important;
+  padding: 5px;
+}
+
+.nodeLabel {
+  text-align: center;
+  margin-top: 7px;
+}
+
+@media (max-width: 1600px) {
+  .nodeHover {
+    font-size: 13px!important;
+    width: 170px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .tooltipTextLink {
+    font-size: 18px!important;
+  }
+
+  .nodeHover {
+    font-size: 12px!important;
+    width: 170px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tooltipTextLink {
+    font-size: 18px!important;
+  }
+
+  .nodeHover {
+    font-size: 13px!important;
+    width: 170px;
+  }
+}
+
+@media (max-width: 900px) {
+  .tooltipTextLink {
+    font-size: 15px!important;
+  }
+
+  .nodeHover {
+    font-size: 10px!important;
+    width: 160px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tooltipTextLink {
+    font-size: 13px!important;
+  }
+  .nodeHover {
+    font-size: 9px!important;
+    width: 150px;
+  }
+}
+
+/* media query 1000px */
+@media (max-width: 1110px) {
+  .wrapperGraphText {
+    flex-direction: column;
+  }
+  .half {
+    flex: 0;
+  }
+}

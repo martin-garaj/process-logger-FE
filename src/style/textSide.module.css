@@ -1,0 +1,31 @@
+.bottomTextDivRightWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.parsedText {
+  overflow: auto;
+  white-space: pre-wrap;
+  margin: 0px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 420px) {
+  .bottomTextDivRightWrapper {
+    justify-content: flex-start;
+    margin: 0px;
+  }
+
+  .text {
+    margin-bottom: -10px;
+  }
+}
